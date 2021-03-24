@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 
+import sys
+sys.path.append('.')
+
+from utils import filters
+JINJA_FILTERS={ 'sidebar': filters.sidebar }
+
 AUTHOR = 'Linear Transformation Consulting'
 SITENAME = 'Linear Transformation Consulting'
 SITEURL = ''
@@ -30,5 +36,6 @@ SOCIAL = (('You can add links in your config file', '#'),
 
 DEFAULT_PAGINATION = False
 
+THEME = "themes/twenty-pelican-html5up"
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
